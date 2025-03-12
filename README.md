@@ -32,3 +32,35 @@ The extension fetches data from the [Kaito API](https://api.kaito.ai/) and provi
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/bro4you/YapsExtension.git
+
+Open Chrome Extensions:
+
+2. Open Chrome and go to chrome://extensions/.
+
+Enable "Developer mode" (toggle in the top-right corner).
+Load the Extension:
+Click "Load unpacked".
+Select the folder where you cloned the repository (e.g., YapsExtension).
+Verify Installation:
+The extension should now appear in your list of extensions.
+You can pin it to the toolbar for easy access.
+Usage
+Single User Check
+Click on the extension icon in the Chrome toolbar.
+Navigate to the "User Check" tab.
+Enter a username in the input field and click "Check Influence".
+View the results, including:
+Total posts.
+Posts in the last 7 days.
+Influence level (High, Medium, or Low).
+User Comparison
+Switch to the "Compare" tab.
+Enter two usernames in the input fields.
+Click "Compare Influence".
+View a side-by-side comparison of both users' statistics and influence levels.
+Technologies Used
+HTML/CSS: For the extension's user interface.
+JavaScript: For logic and interaction.
+Chart.js: For rendering interactive charts.
+Chrome Extensions API: For integrating with Chrome.
+Kaito API: For fetching user data.
