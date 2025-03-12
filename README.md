@@ -33,4 +33,5 @@ The extension fetches data from the [Kaito API](https://api.kaito.ai/) and provi
    ```bash
    git clone https://github.com/bro4you/YapsExtension.git
 
-   Twitter (X): [@bro_4_u](https://x.com/bro_4_u?spm=a2ty_o01.29997169.0.0.3d4d5171F3d31g)
+
+https://x.com/bro_4_u
