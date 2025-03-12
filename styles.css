@@ -3,6 +3,7 @@ body {
     background-color: #f0f0f0;
     width: 400px;
     padding: 10px;
+    transition: background-color 0.3s;
   }
   
   .container {
@@ -10,12 +11,14 @@ body {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
   }
   
   h1 {
     color: #1976D2;
     font-size: 20px;
     text-align: center;
+    transition: color 0.3s;
   }
   
   .tabs {
@@ -29,6 +32,7 @@ body {
     border: none;
     background: #e0e0e0;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .tab-button.active {
@@ -36,10 +40,11 @@ body {
     color: white;
   }
   
-  input {
+  input[type="text"] {
     width: 100%;
     padding: 5px;
     margin: 5px 0;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   button {
@@ -48,6 +53,7 @@ body {
     padding: 8px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
   button:hover {
@@ -56,4 +62,84 @@ body {
   
   canvas {
     max-width: 100%;
+  }
+  
+  /* Стили для настроек */
+  #settings {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #settings label {
+    margin-right: 5px;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  #settings select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #settings input[type="checkbox"] {
+    margin-left: 5px;
+  }
+  
+  /* Темная тема */
+  body.dark {
+    background-color: #212121;
+  }
+  
+  .container.dark {
+    background: #424242;
+    color: #ffffff;
+  }
+  
+  h1.dark {
+    color: #90CAF9;
+  }
+  
+  .tab-button.dark {
+    background: #616161;
+    color: #ffffff;
+  }
+  
+  .tab-button.active.dark {
+    background: #1976D2;
+  }
+  
+  input[type="text"].dark {
+    background: #616161;
+    color: #ffffff;
+    border: 1px solid #757575;
+  }
+  
+  #settings label.dark {
+    color: #ffffff;
+  }
+  
+  #settings select.dark {
+    background: #616161;
+    color: #ffffff;
+    border: 1px solid #757575;
+  }
+
+  #radar-button {
+    background: #FF5722;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  #radar-button:hover {
+    background: #E64A19;
   }

@@ -14,11 +14,32 @@
       <button class="tab-button" id="compare-tab">Compare</button>
     </div>
 
+    <!-- Настройки -->
+    <div id="settings">
+      <label for="chart-color">Chart Color:</label>
+      <select id="chart-color">
+        <option value="#4CAF50">Green</option>
+        <option value="#2196F3">Blue</option>
+        <option value="#FFC107">Yellow</option>
+      </select>
+
+      <label for="chart-type">Chart Type:</label>
+      <select id="chart-type">
+        <option value="bar">Bar</option>
+        <option value="line">Line</option>
+        <option value="pie">Pie</option>
+      </select>
+
+      <label for="dark-theme">Dark Theme:</label>
+      <input type="checkbox" id="dark-theme">
+    </div>
+
     <!-- Проверка одного пользователя -->
     <div id="user-check" class="tab-content active">
       <label for="username">Enter Username:</label>
       <input type="text" id="username" placeholder="Username">
       <button id="check-button">Check Influence</button>
+      <button id="radar-button">View Influence Radar</button>
       <div id="single-result"></div>
       <canvas id="single-chart"></canvas>
     </div>
