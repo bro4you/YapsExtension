@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Yaps Influence Analyzer",
+    "version": "1.0",
+    "description": "Analyze user influence based on Yaps data",
+    "permissions": ["activeTab", "clipboardWrite"],
+    "host_permissions": ["https://api.kaito.ai/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }

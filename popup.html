@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yaps Influence Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Yaps Influence Analyzer</h1>
+    
+    <!-- Вкладки -->
+    <div class="tabs">
+      <button class="tab-button active" id="user-check-tab">User Check</button>
+      <button class="tab-button" id="compare-tab">Compare</button>
+    </div>
+
+    <!-- Проверка одного пользователя -->
+    <div id="user-check" class="tab-content active">
+      <label for="username">Enter Username:</label>
+      <input type="text" id="username" placeholder="Username">
+      <button id="check-button">Check Influence</button>
+      <div id="single-result"></div>
+      <canvas id="single-chart"></canvas>
+    </div>
+
+    <!-- Сравнение пользователей -->
+    <div id="compare" class="tab-content" style="display: none;">
+      <label for="user1">User 1:</label>
+      <input type="text" id="user1" placeholder="User 1">
+      <label for="user2">User 2:</label>
+      <input type="text" id="user2" placeholder="User 2">
+      <button id="compare-button">Compare Influence</button>
+      <div id="compare-result"></div>
+      <canvas id="compare-chart"></canvas>
+    </div>
+  </div>
+
+  <script src="chart.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
